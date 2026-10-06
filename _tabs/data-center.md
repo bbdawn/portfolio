@@ -129,7 +129,7 @@ permalink: /data-center/
         <tr>
           <td><strong>물리 네트워크 토폴로지</strong></td>
           <td>서버 ↔ 스위치 포트 단위 연결 시각화</td>
-          <td>SNMP</td>
+          <td>IPMI, SNMP, LLDP</td>
         </tr>
         <tr>
           <td><strong>가상 네트워크 구성도</strong></td>
