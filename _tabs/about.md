@@ -17,7 +17,7 @@ order: 0
   <strong>기술 개발부터 실제 서비스 적용과 상품화까지의 과정을 경험했습니다.</strong>
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0; opacity: 0.75;">
-  이러한 경험을 바탕으로 <strong>Cloud·IDC 상품의 기술적 가능성과 사업성을 이해하고,<br>새로운 상품을 만들어가는 Product Manager</strong>로 성장하고자 합니다.
+  이러한 경험을 바탕으로 <strong>Cloud·IDC 상품의 기술적 가능성과 사업성을 함께 고려하며,<br>새로운 상품을 만들어가는 Product Manager</strong>로 성장하고자 합니다.
 </p>
 
 ---
