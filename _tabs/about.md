@@ -52,7 +52,7 @@ order: 0
         <li><strong>GPU / AI Infrastructure</strong>
           <ul style="padding-left: 1rem; margin: 0;">
             <li>GPU Passthrough·MIG 기반 GPU Instance 및 모니터링 기능 개발</li>
-            <li>KT Cloud PPP GPU 상품에 적용</li>
+            <li>KT Cloud PPP 「GPU Server」 상품화 및 서비스 제공</li>
           </ul>
         </li>
         <li><strong>Data Center</strong> — IPMI / SNMP 기반 Rack Topology 관리·시각화 기능 개발</li>
