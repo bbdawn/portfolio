@@ -106,11 +106,11 @@ permalink: /data-center/
 <div id="data-center">
 
   <div class="gm-tabs">
-    <button class="gm-tab-btn active" data-panel="overview">Rack Topology 소개</button>
+    <button class="gm-tab-btn active" data-panel="overview">데이터센터 랙 구성도</button>
     <button class="gm-tab-btn" data-panel="provider">멀티 공급자 자원 공유</button>
   </div>
 
-  <!-- ══════════ Rack Topology 소개 ══════════ -->
+  <!-- ══════════ 데이터센터 랙 구성도 ══════════ -->
   <div class="gm-panel active" id="panel-overview">
     <div class="gm-card">
       <h3><i class="fas fa-lightbulb"></i> 개요</h3>
