@@ -36,47 +36,46 @@ order: 0
     <!-- 콘트라베이스 최적화팀 -->
     <div style="position: relative; margin-bottom: 1.6rem;">
       <div style="position: absolute; left: -1.42rem; top: 0.4rem; width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.5;"></div>
-      <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.4rem;">
+      <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.3rem;">
         <span style="font-size: 1rem; font-weight: 600; letter-spacing: -0.01em;">콘트라베이스 최적화팀</span>
         <span style="font-size: 0.82rem; opacity: 0.45;">2023.04 ~ 현재 &nbsp;<span id="dur1"></span></span>
       </div>
+      <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">OpenStack 기반 Private Cloud IaaS 플랫폼 개발·운영</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
-        <li>OpenStack 기반 Private Cloud 관리 포탈 "Contrabass" 백엔드 개발 및 운영</li>
-        <li>GPU Passthrough / MIG 인스턴스 생성 및 관리 기능 개발</li>
-        <li>GPU Host, GPU Instance 모니터링 기능 개발</li>
-        <li>GPU 운영 자동화 TUI 개발 (mdev orphan 탐지, MIG 프로파일 관리)</li>
-        <li>Octavia 로드밸런서 장애 처리 자동화 도구 개발</li>
-        <li>데이터센터 Rack Topology 시각화 기능 개발 (IPMI/SNMP)</li>
-        <li>국방부 국방지능형플랫폼 GPU 모니터링 기능 개발 및 현장 기술 지원</li>
+        <li><strong>Cloud</strong> — Compute, Network, Load Balancer 등 IaaS 자원 관리 기능 개발 및 운영</li>
+        <li><strong>GPU / AI Infrastructure</strong> — GPU Passthrough·MIG 기반 GPU Instance 및 모니터링 기능 개발</li>
+        <li><strong>Data Center</strong> — IPMI / SNMP 기반 Rack Topology 관리·시각화 기능 개발</li>
+        <li><strong>Automation</strong> — GPU mdev orphan 탐지, MIG 프로파일 관리 및 Load Balancer 장애 대응 자동화</li>
+        <li><strong>Customer Support</strong> — 국방지능형플랫폼 GPU 모니터링 개발 및 고객 환경 기술지원</li>
       </ul>
     </div>
 
     <!-- 플랫폼 공통 개발팀 -->
     <div style="position: relative; margin-bottom: 1.6rem;">
       <div style="position: absolute; left: -1.42rem; top: 0.4rem; width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.3;"></div>
-      <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.4rem;">
+      <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.3rem;">
         <span style="font-size: 1rem; font-weight: 600; letter-spacing: -0.01em;">플랫폼 공통 개발팀</span>
         <span style="font-size: 0.82rem; opacity: 0.45;">2022.12 ~ 2023.03 (4개월)</span>
       </div>
+      <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">Cloud Platform / Kubernetes</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
-        <li>Samsung Cloud Platform PaaS(Kubernetes) 관리 포탈 Frontend 개발 및 산출물 작성</li>
-        <li>Cloud Management Platform 개발을 위한 Terraform, Keycloak 도입 검토</li>
+        <li><strong>Kubernetes</strong> — Samsung Cloud Platform PaaS 관리 포탈 개발</li>
+        <li><strong>Cloud Technology</strong> — Terraform / Keycloak 기반 Cloud Management Platform 기술 검토</li>
       </ul>
     </div>
 
     <!-- MLOps팀 -->
     <div style="position: relative;">
       <div style="position: absolute; left: -1.42rem; top: 0.4rem; width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.3;"></div>
-      <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.4rem;">
+      <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.3rem;">
         <span style="font-size: 1rem; font-weight: 600; letter-spacing: -0.01em;">MLOps팀</span>
         <span style="font-size: 0.82rem; opacity: 0.45;">2022.08 ~ 2022.11 (3개월)</span>
       </div>
+      <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">MLOps / AI Platform</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
-        <li>전환형 인턴</li>
-        <li>MLOps CI/CD 솔루션 "Trumpet.ai" Backend 및 Frontend 개발</li>
+        <li>MLOps CI/CD 솔루션 <strong>‘Trumpet.ai’ Backend / Frontend 개발</strong></li>
       </ul>
     </div>
-
   </div>
 </div>
 
