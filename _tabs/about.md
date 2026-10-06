@@ -6,7 +6,7 @@ order: 0
 # 이주현
 
 <p style="font-size: 1.1rem; font-weight: 600; line-height: 1.7; margin: 0.25rem 0 1rem;">
-  클라우드 인프라에 대한 기술적 이해를 바탕으로, 기술을 실제 서비스와 상품으로 연결하는 경험을 쌓아왔습니다.
+  클라우드 인프라에 대한 이해를 바탕으로, 기술을 실제 서비스로 연결하는 경험을 쌓아왔습니다.
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0 0 0.9rem; opacity: 0.75;">
   OpenStack 기반 Private Cloud 플랫폼을 개발·운영하며<br>
