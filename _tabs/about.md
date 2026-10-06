@@ -80,7 +80,7 @@ order: 0
       <div style="position: absolute; left: -1.42rem; top: 0.4rem; width: 7px; height: 7px; border-radius: 50%; background: currentColor; opacity: 0.3;"></div>
       <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 0.3rem;">
         <span style="font-size: 1rem; font-weight: 600; letter-spacing: -0.01em;">MLOps팀</span>
-        <span style="font-size: 0.82rem; opacity: 0.45;">2022.08 ~ 2022.11 (3개월)</span>
+        <span style="font-size: 0.82rem; opacity: 0.45;">2022.08 ~ 2022.11 (3개월) · 전환형 인턴</span>
       </div>
       <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">MLOps / AI Platform</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
