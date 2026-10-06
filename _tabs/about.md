@@ -49,16 +49,34 @@ order: 0
       </div>
       <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">OpenStack 기반 Private Cloud IaaS 플랫폼 개발·운영</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
-        <li><strong>Private Cloud</strong> — Compute, Network, Load Balancer 등 IaaS 자원 관리 기능 개발 및 운영</li>
+        <li><strong>Private Cloud</strong>
+          <ul style="padding-left: 1rem; margin: 0;">
+            <li>Compute, Network, Load Balancer 등 IaaS 자원 관리 기능 개발 및 운영</li>
+          </ul>
+        </li>
         <li><strong>GPU / AI Infrastructure</strong>
           <ul style="padding-left: 1rem; margin: 0;">
             <li>GPU Passthrough·MIG 기반 GPU Instance 및 모니터링 기능 개발</li>
             <li>KT Cloud PPP 「GPU Server」 상품화 및 서비스 제공</li>
           </ul>
         </li>
-        <li><strong>Data Center</strong> — IPMI / SNMP 기반 Rack Topology 관리·시각화 기능 개발</li>
-        <li><strong>Automation</strong> — GPU mdev orphan 탐지, MIG 프로파일 관리 및 Load Balancer 장애 대응 자동화</li>
-        <li><strong>Customer Support</strong> — 국방지능형플랫폼 GPU 모니터링 개발 및 고객 환경 기술지원</li>
+        <li><strong>Data Center</strong>
+          <ul style="padding-left: 1rem; margin: 0;">
+            <li>IPMI / SNMP 기반 Rack Topology 관리·시각화 기능 개발</li>
+          </ul>
+        </li>
+        <li><strong>Automation</strong>
+          <ul style="padding-left: 1rem; margin: 0;">
+            <li>GPU mdev orphan 탐지 및 MIG 프로파일 관리 자동화</li>
+            <li>Load Balancer 장애 대응 자동화</li>
+          </ul>
+        </li>
+        <li><strong>Customer Support</strong>
+          <ul style="padding-left: 1rem; margin: 0;">
+            <li>국방지능형플랫폼 GPU 모니터링 개발</li>
+            <li>고객 환경 기술지원</li>
+          </ul>
+        </li>
       </ul>
     </div>
 
@@ -71,8 +89,16 @@ order: 0
       </div>
       <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">Cloud Platform / Kubernetes</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
-        <li><strong>Kubernetes</strong> — Samsung Cloud Platform PaaS 관리 포탈 개발</li>
-        <li><strong>Cloud Technology</strong> — Terraform / Keycloak 기반 Cloud Management Platform 기술 검토</li>
+        <li><strong>Kubernetes</strong>
+          <ul style="padding-left: 1rem; margin: 0;">
+            <li>Samsung Cloud Platform PaaS 관리 포탈 개발</li>
+          </ul>
+        </li>
+        <li><strong>Cloud Technology</strong>
+          <ul style="padding-left: 1rem; margin: 0;">
+            <li>Terraform / Keycloak 기반 Cloud Management Platform 기술 검토</li>
+          </ul>
+        </li>
       </ul>
     </div>
 
@@ -85,7 +111,11 @@ order: 0
       </div>
       <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">MLOps / AI Platform</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
-        <li>MLOps CI/CD 솔루션 <strong>‘Trumpet.ai’ Backend / Frontend 개발</strong></li>
+        <li><strong>MLOps Platform</strong>
+          <ul style="padding-left: 1rem; margin: 0;">
+            <li>MLOps CI/CD 솔루션 ‘Trumpet.ai’ Backend / Frontend 개발</li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>
