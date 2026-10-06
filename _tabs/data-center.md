@@ -107,7 +107,6 @@ permalink: /data-center/
 
   <div class="gm-tabs">
     <button class="gm-tab-btn active" data-panel="overview">Rack Topology 소개</button>
-    <button class="gm-tab-btn" data-panel="rack">랙 구성도</button>
     <button class="gm-tab-btn" data-panel="physical">물리 네트워크 토폴로지</button>
     <button class="gm-tab-btn" data-panel="virtual">가상 네트워크 구성도</button>
     <button class="gm-tab-btn" data-panel="provider">멀티 공급자 자원 공유</button>
@@ -147,19 +146,6 @@ permalink: /data-center/
       </table>
     </div>
 
-    <div class="gm-card">
-      <h3><i class="fas fa-layer-group"></i> 기술 스택</h3>
-      <table class="gm-table">
-        <tr><th>역할</th><th>기술</th></tr>
-        <tr><td>백엔드</td><td>Java, Spring Boot, JPA</td></tr>
-        <tr><td>데이터베이스</td><td>MySQL</td></tr>
-        <tr><td>인프라 연동</td><td>OpenStack, IPMI, SNMP</td></tr>
-      </table>
-    </div>
-  </div>
-
-  <!-- ══════════ 랙 구성도 ══════════ -->
-  <div class="gm-panel" id="panel-rack">
     <div class="gm-card">
       <h3><i class="fas fa-server"></i> 랙 구성도</h3>
       <p>랙에서 호스트, 스위치, 스토리지의 위치 및 서버 상태 정보를 표시합니다.</p>
