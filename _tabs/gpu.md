@@ -140,21 +140,6 @@ permalink: /gpu/
     <h2 class="gs-title">KT Cloud PPP 「GPU Server」</h2>
     <p class="gs-sub">공공기관 전용 GPU 클라우드 서비스의 핵심 기능인 GPU Instance와 GPU 모니터링을 개발하고,<br>KT Cloud PPP 「GPU Server」 상품화 및 서비스 제공에 참여했습니다.</p>
 
-    <div class="gs-meta">
-      <div>
-        <div class="gs-meta-label">소속</div>
-        <div class="gs-meta-value">오케스트로<br>콘트라베이스 최적화팀</div>
-      </div>
-      <div>
-        <div class="gs-meta-label">역할</div>
-        <div class="gs-meta-value">GPU Instance · 모니터링<br>기능 개발</div>
-      </div>
-      <div>
-        <div class="gs-meta-label">결과</div>
-        <div class="gs-meta-value">KT Cloud PPP<br>「GPU Server」 상품화</div>
-      </div>
-    </div>
-
     <div class="gm-chips">
       <span class="gm-chip">OpenStack</span>
       <span class="gm-chip">GPU Passthrough</span>
@@ -187,7 +172,7 @@ permalink: /gpu/
 
   <!-- ══════════ Contributions ══════════ -->
   <div class="gm-card">
-    <h3><i class="fas fa-user-cog"></i> 나의 기여</h3>
+    <h3><i class="fas fa-user-cog"></i> 주요 수행 업무</h3>
     <div class="gs-contrib">
       <div class="gs-item">
         <div class="gs-num">1</div>
