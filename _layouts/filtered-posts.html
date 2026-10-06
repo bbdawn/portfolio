@@ -34,6 +34,10 @@ layout: page
 {% else %}
   {% assign filtered_posts = "" | split: "," %}
 {% endif %}
+{% if filtered_posts.size == 0 %}
+  <p class="text-muted mt-3">준비 중입니다.</p>
+{% endif %}
+
 {% assign subcategory_order = "Feature,Troubleshooting,Project,Hands-on,Study" | split: "," %}
 
 {% for sub in subcategory_order %}

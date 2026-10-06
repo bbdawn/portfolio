@@ -1,9 +1,9 @@
 ---
 layout: page
-title: GPU Manager
-icon: fas fa-toolbox
+title: GPU
+icon: fas fa-microchip
 order: 2
-permalink: /gpu-manager/
+permalink: /gpu/
 ---
 
 <style>

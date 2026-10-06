@@ -101,7 +101,7 @@ order: 0
 
 
 <div class="ph-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem; margin-bottom: 2rem;">
-  <a class="ph-card" href="{{ '/gpu-manager/' | relative_url }}">
+  <a class="ph-card" href="{{ '/gpu/' | relative_url }}">
     <div class="ph-title"><i class="fas fa-toolbox"></i> GPU Manager</div>
     <div class="ph-desc">수동 10분 걸리던 GPU mdev 판단 작업을, 도구화해서 비전문가도 바로 처리할 수 있게 만든 과정</div>
   </a>

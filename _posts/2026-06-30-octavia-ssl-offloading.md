@@ -1,7 +1,7 @@
 ---
 title: "[Feature] Octavia TERMINATED_HTTPS SSL Offloading 구현"
 date: 2026-06-30 15:00:00 +0900
-categories: [Project, Openstack]
+categories: [Project, Private Cloud]
 subcategory: Feature
 tags: [openstack, octavia, loadbalancer, barbican, ssl, https, p12, java, spring]
 ---
