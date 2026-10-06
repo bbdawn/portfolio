@@ -107,8 +107,6 @@ permalink: /data-center/
 
   <div class="gm-tabs">
     <button class="gm-tab-btn active" data-panel="overview">Rack Topology 소개</button>
-    <button class="gm-tab-btn" data-panel="physical">물리 네트워크 토폴로지</button>
-    <button class="gm-tab-btn" data-panel="virtual">가상 네트워크 구성도</button>
     <button class="gm-tab-btn" data-panel="provider">멀티 공급자 자원 공유</button>
   </div>
 
@@ -164,10 +162,7 @@ permalink: /data-center/
         <strong>활용</strong> — 물리적 장비 위치 파악 용이 · 원격에서 서버 상태 확인 및 이상 감지
       </div>
     </div>
-  </div>
 
-  <!-- ══════════ 물리 네트워크 토폴로지 ══════════ -->
-  <div class="gm-panel" id="panel-physical">
     <div class="gm-card">
       <h3><i class="fas fa-network-wired"></i> 물리 네트워크 토폴로지</h3>
       <p>랙 구성도에 등록한 정보를 기반으로 호스트 및 스위치 연결정보를 표시합니다. 서버와 스위치 간 포트 단위 연결을 시각화하며, IPMI/SNMP 수집 데이터를 활용해 실제 연결 상태를 반영합니다.</p>
@@ -185,10 +180,7 @@ permalink: /data-center/
         <strong>활용</strong> — 네트워크 케이블링 오류 신속 파악 · 물리적 연결 문제 발생 시 빠른 원인 분석
       </div>
     </div>
-  </div>
 
-  <!-- ══════════ 가상 네트워크 구성도 ══════════ -->
-  <div class="gm-panel" id="panel-virtual">
     <div class="gm-card">
       <h3><i class="fas fa-project-diagram"></i> 가상 네트워크 구성도</h3>
       <p>물리 네트워크 호스트에 설치된 Contrabass Engine 내 가상 네트워크(VLAN 기반)에 연결된 가상 머신(VM) 정보를 시각적으로 표현합니다. OpenStack 기반으로 VLAN별 연결된 인스턴스를 매핑·시각화합니다.</p>
@@ -198,6 +190,7 @@ permalink: /data-center/
       </div>
     </div>
   </div>
+
   <!-- ══════════ 멀티 공급자 자원 공유 ══════════ -->
   <div class="gm-panel" id="panel-provider">
     <div class="gm-card">
@@ -235,7 +228,17 @@ permalink: /data-center/
         <li>Switch는 원본 공급자에 1회만 등록</li>
         <li>다른 공급자는 동일 Switch를 참조로 가져와 사용</li>
         <li>SNMP 수집은 원본 등록 기준으로 1회만 수행</li>
-        <li>공급자 활성화/비활성화 시 하위 자원 상태 일괄 관리</li>
+      </ul>
+    </div>
+
+    <div class="gm-card">
+      <h3><i class="fas fa-user-check"></i> 사용자 편의성 고려</h3>
+      <p>중복 등록을 막는 것뿐 아니라, 여러 공급자를 함께 관리하는 운영자가 같은 작업을 반복하지 않도록 사용 흐름을 설계했습니다.</p>
+      <ul>
+        <li>다른 공급자에 이미 등록된 Switch를 목록에서 불러오기만 하면 되어, 동일한 장비 정보를 다시 입력할 필요가 없음</li>
+        <li>장비 정보를 반복 입력하지 않으므로 공급자마다 값이 달라지는 입력 실수를 방지</li>
+        <li>Switch 정보는 원본 한 곳에서만 관리하면 되어, 참조하는 모든 공급자에 동일하게 반영</li>
+        <li>공급자 활성화/비활성화만으로 하위 자원 상태를 일괄 관리하여 자원별 개별 조작 불필요</li>
       </ul>
     </div>
   </div>
