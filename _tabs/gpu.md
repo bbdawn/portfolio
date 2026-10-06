@@ -172,7 +172,7 @@ permalink: /gpu/
 
   <!-- ══════════ Contributions ══════════ -->
   <div class="gm-card">
-    <h3><i class="fas fa-user-cog"></i> 주요 수행 업무</h3>
+    <h3><i class="fas fa-user-cog"></i> 담당 업무</h3>
     <div class="gs-contrib">
       <div class="gs-item">
         <div class="gs-num">1</div>
