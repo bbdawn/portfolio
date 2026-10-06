@@ -94,9 +94,9 @@ order: 0
             <li>Samsung Cloud Platform PaaS(Kubernetes) 관리 포탈 Frontend 개발 및 산출물 작성</li>
           </ul>
         </li>
-        <li><strong>Cloud Technology</strong>
+        <li><strong>Cloud Management Platform</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>Terraform / Keycloak 기반 Cloud Management Platform 기술 검토</li>
+            <li>신규 CMP 제품 개발을 위한 Terraform·Keycloak 기술 스택 도입 검토</li>
           </ul>
         </li>
       </ul>
