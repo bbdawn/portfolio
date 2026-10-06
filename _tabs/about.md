@@ -13,7 +13,7 @@ order: 0
   Compute, Network, GPU, Load Balancer 등 클라우드 인프라의 주요 영역을 경험했습니다.
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0 0 0.9rem; opacity: 0.75;">
-  또한 GPU·데이터센터·Kubernetes 환경을 직접 다루고 고객 환경의 기술지원까지 수행하며,<br>
+  또한 GPU·데이터센터·Kubernetes 환경을 경험하고 고객 환경의 기술지원을 수행하며,<br>
   <strong>클라우드 기술이 실제 고객의 문제와 서비스로 어떻게 연결되는지 경험해왔습니다.</strong>
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0; opacity: 0.75;">
