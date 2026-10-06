@@ -18,7 +18,7 @@ order: 0
   <strong>클라우드 기술이 고객의 문제를 해결하고 서비스가 되는 과정을 경험했습니다.</strong>
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0; opacity: 0.75;">
-  이 경험을 바탕으로 <strong>Cloud·IDC 상품의 고객 가치와 사업성을 이해하고, 새로운 상품을 만들어가는 Product Manager</strong>로 성장하고자 합니다.
+  이 경험을 바탕으로 <strong>Cloud·IDC 상품의 고객 가치와 사업성을 이해하고,<br>새로운 상품을 만들어가는 Product Manager</strong>로 성장하고자 합니다.
 </p>
 
 ---
