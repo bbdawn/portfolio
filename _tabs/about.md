@@ -68,13 +68,13 @@ order: 0
         <li><strong>Automation</strong>
           <ul style="padding-left: 1rem; margin: 0;">
             <li>GPU mdev orphan 탐지 및 MIG 프로파일 관리 자동화</li>
-            <li>Load Balancer 장애 대응 자동화</li>
+            <li>Load Balancer 장애 대응 프로세스 자동화</li>
           </ul>
         </li>
-        <li><strong>Customer Support</strong>
+        <li><strong>Technical Support</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>국방지능형플랫폼 GPU 모니터링 개발</li>
-            <li>고객 환경 기술지원</li>
+            <li>국방지능형플랫폼 GPU 모니터링 기능 개발</li>
+            <li>고객 환경 기술지원 및 장애 분석</li>
           </ul>
         </li>
       </ul>
