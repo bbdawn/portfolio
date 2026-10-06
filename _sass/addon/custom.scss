@@ -1,0 +1,59 @@
+/* Hide all post dates and reading time site-wide */
+
+/* time element: used exclusively for dates in Chirpy */
+time,
+time.timeago,
+time[datetime],
+time[itemprop~="datePublished"],
+time[itemprop~="dateModified"] {
+  display: none !important;
+}
+
+/* Reading time indicator */
+.reading-time,
+.post-reading-time,
+.readingtime,
+span.read-time {
+  display: none !important;
+}
+
+/* Calendar icon + parent span in post meta */
+#post-meta > span:first-child,
+.post-meta > span:first-child {
+  display: none !important;
+}
+
+/* Date/time in archives list */
+.archive-item time,
+.archive-item .post-date {
+  display: none !important;
+}
+
+/* Screenshot guide slots for posts still awaiting photos (gpu-manager 스타일) */
+.shot-multi {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  margin: 1rem 0;
+}
+.shot-item { position: relative; }
+.shot-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  border: 2px dashed var(--link-color);
+  border-radius: 6px;
+  background: var(--code-bg, #f6f6f6);
+  color: var(--link-color);
+  font-size: 0.85rem;
+  opacity: 0.75;
+  text-align: center;
+  padding: 1rem;
+}
+.shot-caption {
+  font-size: 0.8rem;
+  opacity: 0.65;
+  margin-top: 0.35rem;
+  text-align: center;
+}

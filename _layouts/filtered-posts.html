@@ -1,0 +1,95 @@
+---
+layout: page
+---
+
+<style>
+  h1.dynamic-title {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid var(--link-color);
+    margin-bottom: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  h1.dynamic-title .page-title-icon {
+    font-size: 0.78em;
+    opacity: 0.65;
+  }
+</style>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var h1 = document.querySelector('h1.dynamic-title');
+    if (!h1) return;
+    var i = document.createElement('i');
+    i.className = '{{ page.icon }} fa-fw page-title-icon';
+    h1.prepend(i);
+  });
+</script>
+
+{% assign _raw_posts = site.categories[page.filter_category] %}
+{% if _raw_posts %}
+  {% assign filtered_posts = _raw_posts | where_exp: "item", "item.hidden != true" %}
+{% else %}
+  {% assign filtered_posts = "" | split: "," %}
+{% endif %}
+{% assign subcategory_order = "Feature,Troubleshooting,Project,Hands-on,Study" | split: "," %}
+
+{% for sub in subcategory_order %}
+  {% assign sub_posts = filtered_posts | where: "subcategory", sub %}
+  {% assign _has_order = false %}
+  {% for p in sub_posts %}{% if p.order %}{% assign _has_order = true %}{% endif %}{% endfor %}
+  {% if _has_order %}
+    {% assign sub_posts = sub_posts | sort: "order" %}
+  {% else %}
+    {% assign sub_posts = sub_posts | sort: "date" %}
+  {% endif %}
+  {% if sub_posts.size > 0 %}
+  <div class="card categories mb-4">
+    <div class="card-header d-flex justify-content-between hide-border-bottom">
+      <span class="ms-2">
+        {% if sub == "Feature" %}
+          <i class="fas fa-star fa-fw"></i>
+        {% elsif sub == "Project" %}
+          <i class="fas fa-code fa-fw"></i>
+        {% elsif sub == "Hands-on" %}
+          <i class="fas fa-terminal fa-fw"></i>
+        {% elsif sub == "Study" %}
+          <i class="fas fa-book-open fa-fw"></i>
+        {% elsif sub == "Troubleshooting" %}
+          <i class="fas fa-wrench fa-fw"></i>
+        {% else %}
+          <i class="far fa-folder-open fa-fw"></i>
+        {% endif %}
+        {% assign sub_label = sub %}
+        {% if sub == "Feature" %}
+          {% assign sub_label = 'Openstack 기반 Private Cloud 자원 관리 플랫폼 "콘트라베이스" 기능 개발' %}
+        {% endif %}
+        <span class="mx-2 fw-bold">{{ sub_label }}</span>
+        <span class="text-muted small font-weight-light">{{ sub_posts | size }} posts</span>
+      </span>
+    </div>
+    <ul class="list-group list-group-flush" data-sub="{{ sub }}">
+      {% for post in sub_posts %}
+        <li class="list-group-item" data-url="{{ post.url | relative_url }}">
+          {% if sub == "Feature" %}
+            <i class="fas fa-star fa-fw text-muted small"></i>
+          {% elsif sub == "Project" %}
+            <i class="fas fa-code fa-fw text-muted small"></i>
+          {% elsif sub == "Hands-on" %}
+            <i class="fas fa-terminal fa-fw text-muted small"></i>
+          {% elsif sub == "Study" %}
+            <i class="fas fa-book-open fa-fw text-muted small"></i>
+          {% elsif sub == "Troubleshooting" %}
+            <i class="fas fa-wrench fa-fw text-muted small"></i>
+          {% else %}
+            <i class="far fa-file-alt fa-fw text-muted small"></i>
+          {% endif %}
+          <a href="{{ post.url | relative_url }}" class="mx-1">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+{% endfor %}
