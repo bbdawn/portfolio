@@ -51,7 +51,7 @@ order: 0
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
         <li><strong>Private Cloud</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>OpenStack 기반 Private Cloud Compute, Network, Storage, Load Balancer 자원 관리 기능 개발 및 운영</li>
+            <li>OpenStack 기반 Private Cloud 자원(Compute·Network·Storage·LoadBalancer) 관리 기능 개발 및 운영</li>
           </ul>
         </li>
         <li><strong>GPU / AI Infrastructure</strong>
