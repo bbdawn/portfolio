@@ -49,7 +49,7 @@ order: 0
       <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">OpenStack 기반 Private Cloud IaaS 플랫폼 개발·운영</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
         <li><strong>Cloud</strong> — Compute, Network, Load Balancer 등 IaaS 자원 관리 기능 개발 및 운영</li>
-        <li><strong>GPU / AI Infrastructure</strong> — GPU Passthrough·MIG 기반 GPU Instance 및 모니터링 기능 개발</li>
+        <li><strong>GPU / AI Infrastructure</strong> — GPU Passthrough·MIG 기반 GPU Instance 기능을 개발하고, KT Cloud PPP GPU 상품에 적용</li>
         <li><strong>Data Center</strong> — IPMI / SNMP 기반 Rack Topology 관리·시각화 기능 개발</li>
         <li><strong>Automation</strong> — GPU mdev orphan 탐지, MIG 프로파일 관리 및 Load Balancer 장애 대응 자동화</li>
         <li><strong>Customer Support</strong> — 국방지능형플랫폼 GPU 모니터링 개발 및 고객 환경 기술지원</li>
