@@ -57,8 +57,8 @@ order: 0
         </li>
         <li><strong>GPU / AI Infrastructure</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>GPU Passthrough·MIG 기반 GPU Instance 및 모니터링 기능 개발</li>
             <li>KT Cloud PPP 「GPU Server」 상품화 및 서비스 제공</li>
+            <li>GPU Passthrough·MIG 기반 GPU Instance 및 모니터링 기능 개발</li>
           </ul>
         </li>
         <li><strong>Data Center</strong>
