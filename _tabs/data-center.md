@@ -94,6 +94,13 @@ permalink: /data-center/
     margin-top: 0.35rem;
     text-align: center;
   }
+  #data-center pre { overflow-x: auto; font-size: 0.82rem; line-height: 1.6; }
+  #data-center .gm-compare-badge {
+    display: inline-block; font-size: 0.72rem; font-weight: 700;
+    border-radius: 4px; padding: 0.1rem 0.5rem; margin-right: 0.4rem;
+  }
+  #data-center .gm-compare-badge.before { background: rgba(220,53,69,0.12); color: #dc3545; }
+  #data-center .gm-compare-badge.after { background: rgba(40,167,69,0.12); color: #28a745; }
 </style>
 
 <div id="data-center">
@@ -103,6 +110,7 @@ permalink: /data-center/
     <button class="gm-tab-btn" data-panel="rack">랙 구성도</button>
     <button class="gm-tab-btn" data-panel="physical">물리 네트워크 토폴로지</button>
     <button class="gm-tab-btn" data-panel="virtual">가상 네트워크 구성도</button>
+    <button class="gm-tab-btn" data-panel="provider">멀티 공급자 자원 공유</button>
   </div>
 
   <!-- ══════════ Rack Topology 소개 ══════════ -->
@@ -131,16 +139,12 @@ permalink: /data-center/
           <td>VLAN별 연결된 인스턴스 매핑·시각화</td>
           <td>OpenStack</td>
         </tr>
+        <tr>
+          <td><strong>멀티 공급자 자원 공유</strong></td>
+          <td>공급자 간 Switch 중복 등록 제거, 1회 등록 후 참조</td>
+          <td>SNMP</td>
+        </tr>
       </table>
-    </div>
-
-    <div class="gm-card">
-      <h3><i class="fas fa-share-alt"></i> 멀티 공급자 자원 공유</h3>
-      <p>계층 구조 내 자원 중복 등록 문제를 해결했습니다.</p>
-      <ul>
-        <li>스위치 단일 등록으로 여러 공급자에서 재사용 가능</li>
-        <li>공급자 활성화/비활성화 시 하위 자원 상태 일괄 관리</li>
-      </ul>
     </div>
 
     <div class="gm-card">
@@ -206,6 +210,47 @@ permalink: /data-center/
         <img src="/assets/img/posts/rack-topology-virtual-network-view.png" alt="가상 네트워크 구성도 화면 - 네트워크/프로젝트별 인스턴스 매핑 및 상세 정보">
         <div class="gm-shot-caption">네트워크 디렉토리 트리와 프로젝트별 인스턴스 현황을 함께 보여주고, 인스턴스 클릭 시 상태·고정 IP 등 상세 정보를 확인하는 화면</div>
       </div>
+    </div>
+  </div>
+  <!-- ══════════ 멀티 공급자 자원 공유 ══════════ -->
+  <div class="gm-panel" id="panel-provider">
+    <div class="gm-card">
+      <h3><i class="fas fa-share-alt"></i> 개요</h3>
+      <p>데이터센터 랙 토폴로지 시스템에서 공급자(Provider) 간 자원 중복 등록 문제를 해결하는 기능입니다.</p>
+    </div>
+
+    <div class="gm-card">
+      <h3><i class="fas fa-sitemap"></i> 계층 구조</h3>
+      <p>자원은 아래와 같은 4단계 계층으로 구성됩니다.</p>
+<pre><code>Provider (공급자)
+└── Datacenter (데이터센터)
+    └── Rack (랙)
+        └── Resource (서버 / 스위치 / 스토리지)</code></pre>
+    </div>
+
+    <div class="gm-card">
+      <h3><i class="fas fa-exclamation-triangle"></i> 문제 상황</h3>
+      <p><span class="gm-compare-badge before">BEFORE</span>기존에는 Switch가 여러 공급자에 중복 등록될 수 있었습니다. 동일한 물리 스위치가 여러 공급자에 각각 등록되면:</p>
+      <ul>
+        <li>같은 스위치에 SNMP 요청이 공급자 수만큼 반복 발생</li>
+        <li>불필요한 네트워크 부하 및 스위치 응답 지연</li>
+        <li>데이터 일관성 문제 (공급자마다 다른 수집 결과)</li>
+      </ul>
+    </div>
+
+    <div class="gm-card">
+      <h3><i class="fas fa-check-circle"></i> 해결 방법: 자원 공유 설계</h3>
+      <p><span class="gm-compare-badge after">AFTER</span>Switch를 한 번만 등록하고, 다른 공급자에서는 불러오기(import) 방식으로 재사용합니다.</p>
+<pre><code>[공급자 A]              [공급자 B]
+  Rack A                 Rack B
+  └── Switch X  ←─────── Switch X (불러오기)
+       (원본)              (참조)</code></pre>
+      <ul>
+        <li>Switch는 원본 공급자에 1회만 등록</li>
+        <li>다른 공급자는 동일 Switch를 참조로 가져와 사용</li>
+        <li>SNMP 수집은 원본 등록 기준으로 1회만 수행</li>
+        <li>공급자 활성화/비활성화 시 하위 자원 상태 일괄 관리</li>
+      </ul>
     </div>
   </div>
 </div>
