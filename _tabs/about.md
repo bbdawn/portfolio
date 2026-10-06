@@ -6,18 +6,19 @@ order: 0
 # 이주현
 
 <p style="font-size: 1.1rem; font-weight: 600; line-height: 1.7; margin: 0.25rem 0 1rem;">
-  클라우드 인프라에 대한 기술적 이해를 바탕으로, 기술과 비즈니스를 연결하고자 합니다.
+  클라우드 인프라에 대한 기술적 이해를 바탕으로, 기술을 고객 가치와 비즈니스로 연결하고자 합니다.
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0 0 0.9rem; opacity: 0.75;">
   OpenStack 기반 Private Cloud 플랫폼을 개발·운영하며<br>
-  Compute, Network, GPU, Load Balancer 등 클라우드 인프라의 주요 영역을 경험했습니다.
+  Compute, Network, GPU, Load Balancer 등 클라우드 인프라 전반을 다뤄왔습니다.
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0 0 0.9rem; opacity: 0.75;">
-  또한 GPU·데이터센터·Kubernetes 환경을 경험하고 고객 환경의 기술지원을 수행하며,<br>
-  <strong>클라우드 기술이 실제 고객의 문제와 서비스로 어떻게 연결되는지 경험해왔습니다.</strong>
+  특히 GPU Instance 기능을 개발해 KT Cloud 「GPU Server」 상품화와 서비스 제공에 참여했고,<br>
+  데이터센터·Kubernetes 환경과 고객 현장 기술지원을 거치며<br>
+  <strong>클라우드 기술이 고객의 문제를 해결하고 서비스가 되는 과정을 경험했습니다.</strong>
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0; opacity: 0.75;">
-  이러한 기술 경험을 바탕으로 <strong>Cloud·IDC 상품의 고객 가치와 사업성을 이해하고 새로운 상품을 만들어가는 Product Manager</strong>로 성장하고자 합니다.
+  이 경험을 바탕으로 <strong>Cloud·IDC 상품의 고객 가치와 사업성을 이해하고, 새로운 상품을 만들어가는 Product Manager</strong>로 성장하고자 합니다.
 </p>
 
 ---
