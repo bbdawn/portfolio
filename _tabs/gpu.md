@@ -255,22 +255,22 @@ permalink: /gpu/
 
       <p><strong>2. mdev orphan 탐지 및 정리</strong></p>
       <div class="gm-feature-shot">
-        <img src="{{ '/assets/img/posts/gpu-manager-mdev-orphan.png' | relative_url }}" alt="mdev orphan 탐지 및 정리 화면">
+        <img src="/assets/img/posts/gpu-manager-mdev-orphan.png" alt="mdev orphan 탐지 및 정리 화면">
       </div>
       <p>sysfs의 mdev ↔ VM 매핑을 스캔해 어떤 인스턴스에도 연결되지 않은 mdev를 GHOST로 표시하고, PCI 주소까지 함께 보여줍니다. 바로 아래에 각 GHOST mdev를 정리할 수 있는 <code>mdevctl stop</code> 명령어를 그대로 생성해줘서, 원인 조사부터 정리 명령어 작성까지 걸리던 시간을 없앴습니다.</p>
 
       <p><strong>3. MIG 프로파일 관리 — 생성</strong></p>
       <div class="gm-feature-shot gm-shot-multi">
         <div class="gm-shot-item">
-          <img src="{{ '/assets/img/posts/gpu-manager-mig-create-1-select.png' | relative_url }}" alt="GPU/프로파일 선택 화면">
+          <img src="/assets/img/posts/gpu-manager-mig-create-1-select.png" alt="GPU/프로파일 선택 화면">
           <div class="gm-shot-caption">GPU와 생성할 MIG 프로파일 선택</div>
         </div>
         <div class="gm-shot-item">
-          <img src="{{ '/assets/img/posts/gpu-manager-mig-create-2-confirm.png' | relative_url }}" alt="생성 확인 화면">
+          <img src="/assets/img/posts/gpu-manager-mig-create-2-confirm.png" alt="생성 확인 화면">
           <div class="gm-shot-caption">선택한 프로파일로 GPU Instance/Compute Instance 생성 확인</div>
         </div>
         <div class="gm-shot-item">
-          <img src="{{ '/assets/img/posts/gpu-manager-mig-create-3-result.png' | relative_url }}" alt="생성 결과 화면">
+          <img src="/assets/img/posts/gpu-manager-mig-create-3-result.png" alt="생성 결과 화면">
           <div class="gm-shot-caption">생성 완료 후 반영된 MIG 디바이스 목록</div>
         </div>
       </div>
@@ -279,11 +279,11 @@ permalink: /gpu/
       <p><strong>4. MIG 프로파일 관리 — 삭제</strong></p>
       <div class="gm-feature-shot gm-shot-multi">
         <div class="gm-shot-item">
-          <img src="{{ '/assets/img/posts/gpu-manager-mig-delete-1-select.png' | relative_url }}" alt="삭제할 슬라이스 선택 화면">
+          <img src="/assets/img/posts/gpu-manager-mig-delete-1-select.png" alt="삭제할 슬라이스 선택 화면">
           <div class="gm-shot-caption">현재 MIG 디바이스 현황과 프로파일 목록에서 삭제할 슬라이스 선택</div>
         </div>
         <div class="gm-shot-item">
-          <img src="{{ '/assets/img/posts/gpu-manager-mig-delete-2-confirm.png' | relative_url }}" alt="삭제 명령어 확인 화면">
+          <img src="/assets/img/posts/gpu-manager-mig-delete-2-confirm.png" alt="삭제 명령어 확인 화면">
           <div class="gm-shot-caption">선택한 GI/CI에 대해 실행할 삭제 명령어를 보여주고, Enter로 최종 확인 후 실행</div>
         </div>
       </div>

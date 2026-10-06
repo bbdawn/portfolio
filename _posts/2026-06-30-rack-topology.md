@@ -29,7 +29,7 @@ tags: [rack, topology, visualization, openstack, snmp, java, spring]
 - 물리적 장비 위치 파악 용이
 - 원격에서 서버 상태 확인 및 이상 감지
 
-![랙 구성도 화면 - 랙별 장비 배치 및 서버 상세 정보]({{ '/assets/img/posts/rack-topology-rack-view.png' | relative_url }})
+![랙 구성도 화면 - 랙별 장비 배치 및 서버 상세 정보](/assets/img/posts/rack-topology-rack-view.png)
 _랙 목록과 개별 장비의 상태·온도·팬 속도 등 상세 정보를 확인하는 랙 구성도 화면_
 
 ### 물리 네트워크 토폴로지
@@ -54,7 +54,7 @@ _랙 목록과 개별 장비의 상태·온도·팬 속도 등 상세 정보를 
 
 IPMI/SNMP 수집 데이터를 활용해 실제 연결 상태를 반영합니다.
 
-![물리 네트워크 구성도 화면 - 스위치/장비 포트 연결 및 스위치 상세 정보]({{ '/assets/img/posts/rack-topology-physical-network-view.png' | relative_url }})
+![물리 네트워크 구성도 화면 - 스위치/장비 포트 연결 및 스위치 상세 정보](/assets/img/posts/rack-topology-physical-network-view.png)
 _스위치와 서버 간 포트 연결을 시각화하고, 스위치 클릭 시 제조사·SNMP·APIC 등 상세 정보를 확인하는 화면_
 
 ### 가상 네트워크 구성도
@@ -63,7 +63,7 @@ _스위치와 서버 간 포트 연결을 시각화하고, 스위치 클릭 시 
 
 OpenStack 기반으로 VLAN별 연결된 인스턴스를 매핑·시각화합니다.
 
-![가상 네트워크 구성도 화면 - 네트워크/프로젝트별 인스턴스 매핑 및 상세 정보]({{ '/assets/img/posts/rack-topology-virtual-network-view.png' | relative_url }})
+![가상 네트워크 구성도 화면 - 네트워크/프로젝트별 인스턴스 매핑 및 상세 정보](/assets/img/posts/rack-topology-virtual-network-view.png)
 _네트워크 디렉토리 트리와 프로젝트별 인스턴스 현황을 함께 보여주고, 인스턴스 클릭 시 상태·고정 IP 등 상세 정보를 확인하는 화면_
 
 ### 멀티 공급자 자원 공유
