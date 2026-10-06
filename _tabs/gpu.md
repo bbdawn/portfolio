@@ -75,7 +75,6 @@ permalink: /gpu/
     border: 1px solid var(--border-color, #dee2e6); white-space: nowrap;
   }
 
-  #gpu-server .gm-note-src { display: block; font-size: 0.75rem; opacity: 0.55; margin-top: 0.25rem; }
 
   @media (max-width: 768px) {
     #gpu-server .gm-value-grid { grid-template-columns: 1fr; }
@@ -97,7 +96,6 @@ permalink: /gpu/
       <strong>PPP 클라우드란?</strong><br>
       PPP(Public Private Partnership, 민관협력형) 클라우드는 공공과 민간이 협력하여 클라우드 환경을 함께 설계하고 운영하는 클라우드입니다.
       민간의 경험과 기술력, 자본을 활용해 공공 서비스를 효율적으로 제공하기 위해 만들어진 모델입니다.
-      <span class="gm-note-src">출처: 「공공 클라우드의 핵심, 민관협력형 클라우드 | PPP 클라우드!」, 작성자 디딤</span>
     </div>
 
     <div class="gm-value-grid">
