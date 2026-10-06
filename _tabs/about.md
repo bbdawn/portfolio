@@ -48,7 +48,7 @@ order: 0
       </div>
       <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">OpenStack 기반 Private Cloud IaaS 플랫폼 개발·운영</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
-        <li><strong>Cloud</strong> — Compute, Network, Load Balancer 등 IaaS 자원 관리 기능 개발 및 운영</li>
+        <li><strong>Private Cloud</strong> — Compute, Network, Load Balancer 등 IaaS 자원 관리 기능 개발 및 운영</li>
         <li><strong>GPU / AI Infrastructure</strong>
           <ul style="padding-left: 1rem; margin: 0;">
             <li>GPU Passthrough·MIG 기반 GPU Instance 및 모니터링 기능 개발</li>
