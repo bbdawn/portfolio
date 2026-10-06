@@ -91,7 +91,7 @@ order: 0
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
         <li><strong>Kubernetes</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>Samsung Cloud Platform PaaS 관리 포탈 개발</li>
+            <li>Samsung Cloud Platform PaaS(Kubernetes) 관리 포탈 Frontend 개발 및 산출물 작성</li>
           </ul>
         </li>
         <li><strong>Cloud Technology</strong>
