@@ -51,7 +51,7 @@ order: 0
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
         <li><strong>Private Cloud</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>Compute, Network, Load Balancer 등 IaaS 자원 관리 기능 개발 및 운영</li>
+            <li>OpenStack Nova / Neutron / Cinder / Octavia 기반 Compute, Network, Storage, Load Balancer 자원 관리 기능 개발 및 운영</li>
           </ul>
         </li>
         <li><strong>GPU / AI Infrastructure</strong>
