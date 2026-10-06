@@ -13,7 +13,7 @@ order: 0
   Compute, Network, GPU, Load Balancer 등 클라우드 인프라 전반을 다뤄왔습니다.
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0 0 0.9rem; opacity: 0.75;">
-  특히 GPU Instance 기능을 개발해 KT Cloud 「GPU Server」 상품화 및 서비스 제공에 참여하며,<br>
+  특히 GPU Instance 기능을 개발하고 KT Cloud 「GPU Server」 상품화 및 서비스 제공에 참여하며,<br>
   <strong>기술 개발부터 실제 서비스 적용과 상품화까지의 과정을 경험했습니다.</strong>
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0; opacity: 0.75;">
