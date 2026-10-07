@@ -47,7 +47,7 @@ description: OpenStack 기반 Private Cloud 개발·운영 경험을 바탕으�
         <span style="font-size: 1rem; font-weight: 600; letter-spacing: -0.01em;">콘트라베이스 최적화팀</span>
         <span style="font-size: 0.82rem; opacity: 0.45;">2023.04 ~ 현재 &nbsp;<span id="dur1"></span></span>
       </div>
-      <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">OpenStack 기반 Private Cloud IaaS 플랫폼 개발·운영</div>
+      <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">OpenStack 기반 Private Cloud IaaS 플랫폼「<a href="https://www.okestro.com/solution/contrabass/" target="_blank" rel="noopener">콘트라베이스</a>」 개발·운영</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
         <li><strong>Private Cloud</strong>
           <ul style="padding-left: 1rem; margin: 0;">
