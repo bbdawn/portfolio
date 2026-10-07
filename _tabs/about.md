@@ -147,7 +147,7 @@ order: 0
     <div class="ph-title"><i class="fas fa-toolbox"></i> GPU Manager</div>
     <div class="ph-desc">수동 10분 걸리던 GPU mdev 판단 작업을, 도구화해서 비전문가도 바로 처리할 수 있게 만든 과정</div>
   </a>
-  <a class="ph-card" href="{% post_url 2026-06-30-octavia-ssl-offloading %}">
+  <a class="ph-card" href="{{ '/private-cloud/' | relative_url }}">
     <div class="ph-title"><i class="fas fa-lock"></i> Octavia SSL Offloading</div>
     <div class="ph-desc">Octavia 로드밸런서에 TERMINATED_HTTPS 리스너와 Barbican 인증서 연동을 붙여 SSL Offloading 기능을 구현한 과정</div>
   </a>
