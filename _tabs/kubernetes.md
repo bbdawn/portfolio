@@ -196,7 +196,7 @@ Calico CNI 설치  →  3개 노드 모두 Ready</code></pre>
     <p>회사에서 법인카드 사용 내역을 청구할 때는 영수증 파일명을 정해진 형식(날짜·가맹점·용도·매장)으로 바꿔서 첨부해야 했습니다. 많게는 한 달에 40장의 영수증을 하나씩 열어 결제일시와 가맹점, 결제 시각을 확인하고 파일명을 직접 바꿔야 했습니다.</p>
     <p>매달 반복되는 이 작업을 없애기 위해, 영수증을 올리기만 하면 파일명이 자동으로 만들어지는 OCR 서비스를 만들었습니다.</p>
     <div class="gm-note">
-      <span class="gm-compare-badge before">BEFORE</span>영수증마다 열어서 정보 확인 → 파일명 직접 입력 (많게는 월 40장)<br>
+      <span class="gm-compare-badge before">BEFORE</span>영수증마다 열어서 정보 확인 → 파일명 직접 입력 (개인별 월 40장)<br>
       <span class="gm-compare-badge after">AFTER</span>여러 장을 한 번에 업로드 → 파일명 자동 생성 → 전체 다운로드
     </div>
   </div>
