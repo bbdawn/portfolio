@@ -115,7 +115,7 @@ permalink: /private-cloud/
   <!-- ══════════ RFP 검토 ══════════ -->
   <div class="gm-card">
     <h3><i class="fas fa-clipboard-check"></i> RFP 요구사항 기술 검토</h3>
-    <p>공공기관 AI 플랫폼 구축 사업의 RFP에서 <strong>GPU, Network, Load Balancer, VM Lifecycle 관리</strong> 요구사항을 콘트라베이스에 구현된 기능과 하나씩 대조해 충족 가능 여부를 검토하고, 기술적인 의견을 전달했습니다.</p>
+    <p>RFP의 <strong>GPU, Network, Load Balancer, VM Lifecycle 관리</strong> 요구사항을 콘트라베이스에 구현된 기능과 하나씩 대조해 충족 가능 여부를 검토하고, 기술적인 의견을 전달했습니다.</p>
 <pre><code>RFP 요구사항  →  구현된 기능과 대조  →  충족 가능 여부 판단  →  기술 의견 전달
                                       (충족 / 부분 충족 / 미충족)</code></pre>
     <div class="gm-table-wrap">

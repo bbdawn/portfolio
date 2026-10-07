@@ -75,7 +75,7 @@ description: OpenStack 기반 Private Cloud 개발·운영 경험을 바탕으�
         </li>
         <li><strong>Technical Support</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>국방지능형플랫폼 GPU 모니터링 기능 개발</li>
+            <li><a href="http://www.worktoday.co.kr/news/articleView.html?idxno=40581" target="_blank" rel="noopener">국방지능형플랫폼</a> GPU 모니터링 기능 개발</li>
             <li>고객 환경 기술지원 및 장애 분석</li>
           </ul>
         </li>
