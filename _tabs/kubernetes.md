@@ -100,6 +100,7 @@ permalink: /kubernetes/
     color: #fff; background: var(--link-color); border-radius: 4px; padding: 0.15rem 0.5rem;
   }
   #k8s .k8s-project-title { font-size: 1.2rem; font-weight: 800; letter-spacing: -0.01em; }
+  #k8s .k8s-personal { margin-left: auto; font-size: 0.72rem; font-weight: 700; color: #28a745; background: rgba(40,167,69,0.12); border-radius: 4px; padding: 0.15rem 0.5rem; white-space: nowrap; }
 
   /* 3칸 박스 */
   #k8s .gs-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.6rem; margin: 0.9rem 0 0.25rem; }
@@ -121,6 +122,7 @@ permalink: /kubernetes/
   <div class="k8s-project">
     <span class="k8s-project-num">PROJECT 1</span>
     <span class="k8s-project-title">OpenStack 위 Kubernetes 클러스터 구축</span>
+    <span class="k8s-personal">개인 프로젝트</span>
   </div>
 
   <div class="gm-card">
@@ -189,6 +191,7 @@ Calico CNI 설치  →  3개 노드 모두 Ready</code></pre>
   <div class="k8s-project">
     <span class="k8s-project-num">PROJECT 2</span>
     <span class="k8s-project-title">영수증 OCR 워크로드 배포</span>
+    <span class="k8s-personal">개인 프로젝트</span>
   </div>
 
   <div class="gm-card">

@@ -365,7 +365,7 @@ echo "✔ Scan completed safely."</code></pre>
 
     <div class="gm-card">
       <h3><i class="fas fa-th-large"></i> MIG 프로파일 관리 — 수동 명령어 조합</h3>
-      <p><span class="gm-compare-badge before">BEFORE</span>MIG 프로파일을 만들고 지울 때도 아래 명령어들을 GPU마다, 프로파일마다 반복 실행해야 했습니다.</p>
+      <p><span class="gm-compare-badge before">BEFORE</span>MIG 프로파일을 만들고 지울 때도 아래와 같은 <code>nvidia-smi mig</code> 명령어들을 GPU마다, 프로파일마다 반복 실행해야 했습니다.</p>
       <div class="gm-cmd-list">
         <div class="gm-cmd-row">
           <span class="gm-cmd-label">MIG 모드 활성화</span>
@@ -398,7 +398,6 @@ echo "✔ Scan completed safely."</code></pre>
           <button class="gm-cmd-copy" onclick="gmCopyInline(this)" title="복사"><i class="fas fa-copy"></i></button>
         </div>
       </div>
-      <p style="margin-top:0.75rem; font-size:0.85rem; opacity:0.6;">※ 이 부분도 실제로 사용하신 정확한 명령어/순서로 교체해주세요 (표준 nvidia-smi mig 명령어를 기준으로 재구성했습니다).</p>
     </div>
 
     <div class="gm-card">

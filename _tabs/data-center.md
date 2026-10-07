@@ -115,6 +115,7 @@ permalink: /data-center/
     <div class="gm-card">
       <h3><i class="fas fa-lightbulb"></i> 개요</h3>
       <p>데이터센터의 물리/가상 인프라 구조를 시각화하는 프로젝트입니다.<br>랙에 배치된 서버·스위치·스토리지의 위치와 상태, 장비 간 물리 네트워크 연결, 그리고 그 위에서 동작하는 OpenStack 가상 네트워크와 인스턴스까지 하나의 흐름으로 보여줍니다.</p>
+      <p><strong>담당</strong> — DB 설계부터 API까지 백엔드를 직접 구현했습니다.</p>
     </div>
 
     <div class="gm-card">
