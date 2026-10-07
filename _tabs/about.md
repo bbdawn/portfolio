@@ -143,17 +143,21 @@ order: 0
 
 
 <div class="ph-grid" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.9rem; margin-bottom: 2rem;">
+  <a class="ph-card" href="{{ '/gpu/' | relative_url }}">
+    <div class="ph-title"><i class="fas fa-microchip"></i> KT Cloud PPP 「GPU Server」</div>
+    <div class="ph-desc">GPU Passthrough·MIG 기반 GPU Instance와 모니터링 기능을 개발하고, 공공기관 전용 GPU 클라우드 상품화 및 서비스 제공에 참여</div>
+  </a>
+  <a class="ph-card" href="{{ '/private-cloud/' | relative_url }}">
+    <div class="ph-title"><i class="fas fa-cloud"></i> Private Cloud IaaS 자원 관리 포탈</div>
+    <div class="ph-desc">OpenStack 기반 Network·Load Balancer·Storage 자원 관리 기능 개발 — 연동 불가 포트를 미리 알려주는 등 사용자 오류를 줄이는 화면 개선</div>
+  </a>
   <a class="ph-card" href="{{ '/gpu-manager/' | relative_url }}">
     <div class="ph-title"><i class="fas fa-toolbox"></i> GPU Manager</div>
     <div class="ph-desc">수동 10분 걸리던 GPU mdev 판단 작업을, 도구화해서 비전문가도 바로 처리할 수 있게 만든 과정</div>
   </a>
-  <a class="ph-card" href="{{ '/private-cloud/' | relative_url }}">
-    <div class="ph-title"><i class="fas fa-lock"></i> Octavia SSL Offloading</div>
-    <div class="ph-desc">Octavia 로드밸런서에 TERMINATED_HTTPS 리스너와 Barbican 인증서 연동을 붙여 SSL Offloading 기능을 구현한 과정</div>
-  </a>
-  <a class="ph-card" href="{{ '/data-center/' | relative_url }}">
-    <div class="ph-title"><i class="fas fa-server"></i> 데이터센터 랙 구성도</div>
-    <div class="ph-desc">DB 설계부터 API까지 직접 구현한 데이터센터 랙/자원 시각화 프로젝트 — OpenStack 연동 가상 네트워크 토폴로지, 물리 네트워크 토폴로지 기능 포함</div>
+  <a class="ph-card" href="{{ '/kubernetes/' | relative_url }}">
+    <div class="ph-title"><i class="fas fa-receipt"></i> 영수증 OCR</div>
+    <div class="ph-desc">개인별 월 40장의 영수증 파일명 변경 작업을 업로드만으로 자동화한 OCR 서비스 — 직접 구축한 Kubernetes 클러스터에 배포</div>
   </a>
 </div>
 
