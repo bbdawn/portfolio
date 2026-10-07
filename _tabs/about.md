@@ -1,6 +1,7 @@
 ---
 icon: fas fa-info-circle
 order: 0
+description: OpenStack 기반 Private Cloud 개발·운영 경험을 바탕으로 Cloud·IDC Product Manager를 지향하는 이주현의 포트폴리오입니다.
 ---
 
 # 이주현
