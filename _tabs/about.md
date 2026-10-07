@@ -70,7 +70,6 @@ description: OpenStack 기반 Private Cloud 개발·운영 경험을 바탕으�
         <li><strong>Automation</strong>
           <ul style="padding-left: 1rem; margin: 0;">
             <li>GPU Instance 운영을 위한 mdev orphan 탐지 및 MIG 프로파일 관리 자동화</li>
-            <li>Load Balancer 장애 대응 프로세스 자동화</li>
           </ul>
         </li>
         <li><strong>Technical Support</strong>
