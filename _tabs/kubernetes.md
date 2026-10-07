@@ -247,7 +247,7 @@ Calico CNI 설치  →  3개 노드 모두 Ready</code></pre>
         <tr><td>노드 배치</td><td><code>ocr-bench/role=target</code> 라벨로 측정 대상 노드 고정. worker1은 OCR, worker2는 부하 생성 도구용으로 분리</td></tr>
       </table>
     </div>
-    <p style="margin-top:0.75rem;">사내 레지스트리를 쓸 수 없어, amd64인 Worker 노드에서 buildkit으로 직접 이미지를 빌드해 containerd의 <code>k8s.io</code> 네임스페이스에 넣는 방식으로 배포했습니다. OCR 모델은 빌드 단계에서 이미지에 구워, 모델 다운로드 시간이 Pod 기동 시간에 섞이지 않게 했습니다.</p>
+    <p style="margin-top:0.75rem;">amd64인 Worker 노드에서 buildkit으로 직접 이미지를 빌드해 containerd의 <code>k8s.io</code> 네임스페이스에 넣는 방식으로 배포했습니다. OCR 모델은 빌드 단계에서 이미지에 구워, 모델 다운로드 시간이 Pod 기동 시간에 섞이지 않게 했습니다.</p>
   </div>
 
 </div>
