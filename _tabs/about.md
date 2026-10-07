@@ -11,7 +11,7 @@ description: OpenStack 기반 Private Cloud 개발·운영 경험을 바탕으�
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0 0 0.9rem; opacity: 0.75;">
   OpenStack 기반 Private Cloud 플랫폼을 개발·운영하며<br>
-  Compute, Network, GPU, Load Balancer 등 클라우드 인프라 전반을 다뤄왔습니다.
+  Compute, Network, Storage, Load Balancer, GPU 등 클라우드 인프라 전반을 다뤄왔습니다.
 </p>
 <p style="font-size: 1rem; line-height: 1.85; margin: 0 0 0.9rem; opacity: 0.75;">
   특히 GPU Instance 기능을 개발하고 KT Cloud 「GPU Server」 상품화 및 서비스 제공에 참여하며,<br>
@@ -64,7 +64,7 @@ description: OpenStack 기반 Private Cloud 개발·운영 경험을 바탕으�
         </li>
         <li><strong>Data Center</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>IPMI / SNMP 기반 Rack Topology 관리·시각화 기능 개발</li>
+            <li>IPMI · SNMP · LLDP 기반 데이터센터 랙 구성도 관리·시각화 기능 개발</li>
           </ul>
         </li>
         <li><strong>Automation</strong>

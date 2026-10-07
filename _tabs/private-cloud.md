@@ -178,37 +178,6 @@ permalink: /private-cloud/
     </div>
   </div>
 
-  <!-- ══════════ 보안그룹 ══════════ -->
-  <div class="gm-card">
-    <h3><i class="fas fa-shield-alt"></i> 포트 기준 보안그룹 조회 API</h3>
-    <p>보안그룹은 인스턴스가 아니라 인스턴스에 연결된 <strong>포트</strong>에 적용됩니다. 포트 하나에 여러 보안그룹이 적용될 수 있고, 보안그룹이 없는 포트도 있습니다.</p>
-<pre><code>Instance
- ├── Port1 ── SG-A, SG-B
- ├── Port2 ── SG-B
- └── Port3 ── (보안그룹 없음)</code></pre>
-    <p>Nova API는 인스턴스의 보안그룹을 포트 구분 없이 중복값을 포함해 반환해서, 같은 보안그룹이 화면에 여러 번 보이는 문제가 있었습니다. 이를 해결하기 위해 <strong>포트 단위로 보안그룹을 구분해 반환하는 API</strong>를 개발했습니다.</p>
-    <div class="gm-feature-shot">
-      <img src="/assets/img/posts/openstack-security-group-instance-detail.png" alt="인스턴스 상세 화면 - 포트별 보안그룹 목록">
-      <div class="gm-shot-caption">인스턴스 상세 화면에서 포트별로 적용된 보안그룹을 구분해 표시</div>
-    </div>
-  </div>
-
-  <!-- ══════════ 볼륨 그룹 ══════════ -->
-  <div class="gm-card">
-    <h3><i class="fas fa-hdd"></i> Cinder 볼륨 그룹 관리</h3>
-    <p>여러 볼륨이 함께 있어야 의미가 있는 작업(그룹 단위 스냅샷, 백업)에서는 볼륨 간 정합성이 중요합니다. Cinder의 Volume Group으로 여러 볼륨을 묶어 <strong>같은 시점 기준</strong>으로 다룰 수 있도록, 콘트라베이스에서 볼륨 그룹을 관리하는 기능을 개발했습니다.</p>
-    <div class="gm-table-wrap">
-      <table class="gm-table">
-        <tr><th>기능</th><th>설명</th></tr>
-        <tr><td>그룹 생성</td><td>Volume Group Type 지정 후 그룹 생성</td></tr>
-        <tr><td>볼륨 추가/제거</td><td>기존 볼륨을 그룹에 편입하거나 그룹에서 제외</td></tr>
-        <tr><td>그룹 조회</td><td>그룹에 속한 볼륨 목록 및 상태 조회</td></tr>
-        <tr><td>그룹 삭제</td><td>그룹 및 그룹 내 볼륨 처리 옵션 포함 삭제</td></tr>
-      </table>
-    </div>
-    <div class="gm-note">이 기능은 이후 인스턴스에 연결된 여러 볼륨을 같은 시점으로 복제해야 하는 <strong>인스턴스 복제</strong> 기능의 기반 자원으로 사용되었습니다. (인스턴스 복제 구현은 다른 팀원이 진행)</div>
-  </div>
-
   <!-- ══════════ 자동화 ══════════ -->
   <div class="gm-card">
     <h3><i class="fas fa-robot"></i> 운영 자동화 — Load Balancer Pool Member 자동 구축</h3>
@@ -235,14 +204,16 @@ permalink: /private-cloud/
     </a>
   </div>
 
-  <!-- ══════════ 장애 대응 ══════════ -->
+  <!-- ══════════ 그 외 개발·운영 ══════════ -->
   <div class="gm-card">
-    <h3><i class="fas fa-wrench"></i> 운영 장애 대응 — Load Balancer 생성 실패</h3>
+    <h3><i class="fas fa-th-list"></i> 그 외 개발·운영</h3>
     <div class="gm-table-wrap">
       <table class="gm-table">
-        <tr><th>증상</th><th>원인</th><th>해결</th></tr>
-        <tr><td><code>Anti-affinity instance group policy was violated</code></td><td>Amphora 서버 그룹의 anti-affinity 정책상, 그룹 내 VM 수가 사용 가능한 Compute 호스트 수보다 많음</td><td>호스트 추가, 불필요한 VM 정리, 또는 환경에 맞게 soft-anti-affinity 적용</td></tr>
-        <tr><td>노드 재부팅 후 Load Balancer 생성 실패</td><td>Health Manager와 Amphora가 통신하는 <code>o-hm0</code> 인터페이스가 사라짐</td><td>Neutron의 Health Manager 포트 정보(MAC, port id)로 OVS <code>br-int</code>에 인터페이스 재생성</td></tr>
+        <tr><th>구분</th><th>항목</th><th>내용</th></tr>
+        <tr><td>Network</td><td>포트 기준 보안그룹 조회 API</td><td>보안그룹은 포트 단위로 적용되는데 Nova API는 포트 구분 없이 중복값을 반환해, 화면에 같은 보안그룹이 여러 번 보이던 문제를 포트 단위로 구분해 반환하도록 해결</td></tr>
+        <tr><td>Storage</td><td>Cinder 볼륨 그룹 관리</td><td>여러 볼륨을 같은 시점 기준으로 스냅샷·백업할 수 있도록 볼륨 그룹 생성·볼륨 추가/제거·조회·삭제 기능 개발. 이후 인스턴스 복제 기능의 기반 자원으로 사용 (복제 구현은 다른 팀원이 진행)</td></tr>
+        <tr><td>운영</td><td>Load Balancer 생성 실패 대응 (1)</td><td><code>Anti-affinity instance group policy was violated</code> — 서버 그룹 내 VM 수가 사용 가능한 Compute 호스트 수보다 많아 발생. 호스트 추가, 불필요한 VM 정리, 환경에 맞는 정책 적용으로 해결</td></tr>
+        <tr><td>운영</td><td>Load Balancer 생성 실패 대응 (2)</td><td>노드 재부팅 후 Health Manager와 Amphora가 통신하는 <code>o-hm0</code> 인터페이스가 사라져 발생. Neutron 포트 정보로 OVS에 인터페이스를 재생성해 복구</td></tr>
       </table>
     </div>
   </div>
