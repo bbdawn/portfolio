@@ -87,6 +87,8 @@ permalink: /kubernetes/
   }
   #k8s .gm-feature-shot img { max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 0 auto; }
   #k8s .gm-shot-caption { font-size: 0.8rem; opacity: 0.65; margin-top: 0.35rem; text-align: center; }
+  #k8s .gm-feature-shot.gm-shot-multi { display: flex; flex-direction: column; gap: 1rem; }
+  #k8s .gm-shot-step { font-size: 0.72rem; font-weight: 700; color: var(--link-color); letter-spacing: 0.06em; margin-bottom: 0.35rem; }
 
   /* 프로젝트 구분 */
   #k8s .k8s-project {
@@ -227,6 +229,23 @@ Calico CNI 설치  →  3개 노드 모두 Ready</code></pre>
    │          │          └ 결제 시각 17시 이후면 저녁, 이전이면 점심
    │          └ 가맹점 정보 &gt; 상호 (결제 주체)
    └ 결제일시 → YY.MM.DD</code></pre>
+    <div class="gm-feature-shot gm-shot-multi">
+      <div>
+        <div class="gm-shot-step">STEP 1 · 업로드</div>
+        <img src="/assets/img/posts/ocr-upload-empty.png" alt="영수증 OCR 업로드 화면">
+        <div class="gm-shot-caption">영수증 이미지를 끌어다 놓거나 선택해서 업로드 (여러 장 동시 선택 가능)</div>
+      </div>
+      <div>
+        <div class="gm-shot-step">STEP 2 · 인식</div>
+        <img src="/assets/img/posts/ocr-upload-processing.png" alt="여러 장의 영수증을 동시에 인식하는 화면">
+        <div class="gm-shot-caption">여러 장의 영수증을 한 번에 올려 인식</div>
+      </div>
+      <div>
+        <div class="gm-shot-step">STEP 3 · 파일명 생성</div>
+        <img src="/assets/img/posts/ocr-upload-result.png" alt="인식 결과와 생성된 파일명">
+        <div class="gm-shot-caption">결제일시·가맹점·용도·판매자를 추출해 <code>26.09.14(주)우아한형제들_점심_싱싱샐러드</code> 형식의 파일명을 생성하고, 복사하거나 그 이름으로 바로 다운로드</div>
+      </div>
+    </div>
     <ul>
       <li>배달앱처럼 결제 주체(가맹점)와 실제 매장(판매자)이 다른 영수증을 고려해 두 섹션을 구분해 추출</li>
       <li>OCR이 공백을 지워 붙인 날짜·시각을 파싱하고, 사업자번호를 날짜로 오인하지 않도록 유효한 날짜만 채택</li>
