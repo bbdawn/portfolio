@@ -192,9 +192,19 @@ Calico CNI 설치  →  3개 노드 모두 Ready</code></pre>
   </div>
 
   <div class="gm-card">
+    <h3><i class="fas fa-question-circle"></i> 왜 만들었는가</h3>
+    <p>회사에서 법인카드 사용 내역을 청구할 때는 영수증 파일명을 정해진 형식(날짜·가맹점·용도·매장)으로 바꿔서 첨부해야 했습니다. 많게는 한 달에 40장의 영수증을 하나씩 열어 결제일시와 가맹점, 결제 시각을 확인하고 파일명을 직접 바꿔야 했습니다.</p>
+    <p>매달 반복되는 이 작업을 없애기 위해, 영수증을 올리기만 하면 파일명이 자동으로 만들어지는 OCR 서비스를 만들었습니다.</p>
+    <div class="gm-note">
+      <span class="gm-compare-badge before">BEFORE</span>영수증마다 열어서 정보 확인 → 파일명 직접 입력 (많게는 월 40장)<br>
+      <span class="gm-compare-badge after">AFTER</span>여러 장을 한 번에 업로드 → 파일명 자동 생성 → 전체 다운로드
+    </div>
+  </div>
+
+  <div class="gm-card">
     <h3><i class="fas fa-lightbulb"></i> 개요</h3>
-    <p>위에서 구축한 클러스터에 OCR 추론 워크로드를 올리고, Pod 개수에 따른 성능을 측정하기 위한 프로젝트입니다.<br>
-    OCR은 재현 가능하고 측정하기 쉬운 워크로드로 선택했고, 실제로 쓸 수 있도록 영수증 경비 처리용 파일명 생성 화면을 함께 만들었습니다.</p>
+    <p>영수증 이미지를 올리면 OCR로 결제 정보를 읽어 청구용 파일명을 자동으로 만들어 주는 서비스입니다.<br>
+    FastAPI와 PaddleOCR로 만들고, 위에서 직접 구축한 Kubernetes 클러스터에 배포했습니다. 이후 Pod 개수에 따른 성능 측정에도 활용할 수 있도록 추론 시간을 따로 측정하는 구조로 설계했습니다.</p>
     <a class="gm-github-btn" href="https://github.com/bbdawn/k8s-platform" target="_blank" rel="noopener">
       <i class="fab fa-github"></i> GitHub에서 k8s-platform 보기
     </a>
@@ -238,69 +248,6 @@ Calico CNI 설치  →  3개 노드 모두 Ready</code></pre>
       </table>
     </div>
     <p style="margin-top:0.75rem;">사내 레지스트리를 쓸 수 없어, amd64인 Worker 노드에서 buildkit으로 직접 이미지를 빌드해 containerd의 <code>k8s.io</code> 네임스페이스에 넣는 방식으로 배포했습니다. OCR 모델은 빌드 단계에서 이미지에 구워, 모델 다운로드 시간이 Pod 기동 시간에 섞이지 않게 했습니다.</p>
-  </div>
-
-  <div class="gm-card">
-    <h3><i class="fas fa-wrench"></i> 트러블슈팅</h3>
-    <div class="gm-table-wrap">
-      <table class="gm-table">
-        <tr><th>문제</th><th>원인</th><th>해결</th></tr>
-        <tr><td>Mac에서 이미지 빌드 실패 (<code>Illegal instruction</code>)</td><td>amd64 에뮬레이션 CPU에 AVX가 없어 PaddlePaddle이 동작하지 않음</td><td>amd64 Worker 노드에서 buildkit으로 직접 빌드</td></tr>
-        <tr><td>빌드는 성공했는데 kubelet이 이미지를 못 찾음</td><td>containerd 이미지 네임스페이스가 분리되어 있고 kubelet은 <code>k8s.io</code>만 봄</td><td>buildkitd 설정에서 namespace를 <code>k8s.io</code>로 지정</td></tr>
-        <tr><td>비root 실행 시 OCR 엔진 초기화 실패</td><td>모델은 <code>/root</code>에 구워졌는데 런타임 UID에는 HOME이 없어 권한 오류</td><td>Dockerfile에서 HOME 고정, 소유권 이전, <code>USER</code> 지정</td></tr>
-        <tr><td>엔진이 죽은 Pod가 Ready로 트래픽을 받음</td><td>probe 3개가 모두 엔진 상태를 보지 않는 <code>/health</code>를 확인</td><td><code>/ready</code>를 만들어 startup·readiness에 연결</td></tr>
-        <tr><td>재배포가 멈춤 (Pending)</td><td>nodeSelector로 한 노드에 고정한 상태에서 RollingUpdate가 자원을 두 배로 요구</td><td><code>strategy: Recreate</code>로 변경</td></tr>
-        <tr><td>추론 중 liveness probe 실패로 재시작</td><td>CPU limit이 노드 전체(2코어)라 시스템 몫이 없고, probe 타임아웃이 기본 1초</td><td>CPU limit 1500m, 스레드 수 1, timeout 5초</td></tr>
-        <tr><td>큰 휴대폰 사진에서 컨테이너가 응답 없이 종료</td><td>3024×4032 이미지의 float32 사본들이 메모리 한도 초과</td><td>추론 전에 긴 변을 축소 (<code>OCR_MAX_IMAGE_SIDE</code>)</td></tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="gm-card">
-    <h3><i class="fas fa-chart-bar"></i> 측정으로 얻은 것</h3>
-
-    <p><strong>1. 동시성은 Pod 안이 아니라 Pod 개수로 올려야 한다</strong></p>
-    <div class="gm-table-wrap">
-      <table class="gm-table">
-        <tr><th>동시 요청</th><th>MAX_CONCURRENCY=1</th><th>MAX_CONCURRENCY=4</th></tr>
-        <tr><td>1</td><td>0.70 req/s</td><td>0.69 req/s</td></tr>
-        <tr><td>2</td><td>0.72 req/s</td><td>0.72 req/s</td></tr>
-        <tr><td>4</td><td>0.72 req/s · 평균 3,468ms</td><td>0.72 req/s · 평균 5,297ms</td></tr>
-      </table>
-    </div>
-    <p>Pod 내부 스레드를 늘려도 처리량은 그대로이고 지연만 나빠졌습니다. 그래서 벤치마크의 비교 축을 Pod 개수로 정했습니다.</p>
-
-    <p><strong>2. 가벼운 모델이 항상 답은 아니다</strong></p>
-    <div class="gm-table-wrap">
-      <table class="gm-table">
-        <tr><th>검출 모델</th><th>추론 시간</th><th>메모리</th><th>인식 결과</th></tr>
-        <tr><td>server (기본)</td><td>6,200ms</td><td>2,628MB</td><td>한글 10줄 전부 정확</td></tr>
-        <tr><td>mobile</td><td>1,400ms</td><td>1,782MB</td><td>숫자만 인식, 한글 유실</td></tr>
-      </table>
-    </div>
-    <p>mobile은 4.5배 빠르지만 한국어 영수증에는 쓸 수 없었습니다. 인식 건수는 둘 다 10건으로 같아서, 건수가 아니라 텍스트 내용으로 검증해야 한다는 것을 확인했습니다.</p>
-
-    <p><strong>3. 메모리는 입력 픽셀 수에 비례한다</strong></p>
-<pre><code>피크 메모리 ≈ 1,380MB(모델 로드) + 5.1KB × 입력 픽셀 수
-1200×1600 → 약 11GB   ·   600×800 → 약 3.9GB   ·   360×480 → 약 2.3GB</code></pre>
-    <p>단계별 실측으로 이 관계를 찾아, Pod 메모리 한도에서 허용 가능한 입력 크기를 역산할 수 있게 했습니다.</p>
-  </div>
-
-  <div class="gm-card">
-    <h3><i class="fas fa-tasks"></i> 현재 상태와 다음 단계</h3>
-    <div class="gm-table-wrap">
-      <table class="gm-table">
-        <tr><th>항목</th><th>상태</th></tr>
-        <tr><td>OCR 워크로드 · 업로드 화면 · 테스트</td><td><span class="gm-compare-badge after">완료</span></td></tr>
-        <tr><td>로컬 추론 검증 (한글 영수증 10줄)</td><td><span class="gm-compare-badge after">완료</span></td></tr>
-        <tr><td>클러스터 배포 (Pod Running)</td><td><span class="gm-compare-badge after">완료</span></td></tr>
-        <tr><td>클러스터 추론</td><td><span class="gm-compare-badge before">막힘</span> 2Core/4GB 노드에서 OOMKilled</td></tr>
-        <tr><td>Pod 개수별(1/2/4/8) 벤치마크</td><td><span class="gm-compare-badge dev">예정</span></td></tr>
-      </table>
-    </div>
-    <div class="gm-note">
-      측정 결과 2Core/4GB 노드에서는 Pod가 1개밖에 올라가지 않아 Pod 개수 비교 자체가 불가능하다고 판단했습니다. Worker 노드를 4Core/8GB로 늘린 뒤 벤치마크를 진행할 예정입니다.
-    </div>
   </div>
 
 </div>
