@@ -99,7 +99,7 @@ permalink: /private-cloud/
   <!-- ══════════ 개요 ══════════ -->
   <div class="gm-card">
     <h3><i class="fas fa-lightbulb"></i> 개요</h3>
-    <p>콘트라베이스(Contrabass)는 OpenStack 기반 Private Cloud IaaS 자원 관리 포탈입니다.<br>사용자는 CLI 없이 포탈 화면에서 Compute, Network, Storage, Load Balancer 자원을 생성하고 관리할 수 있습니다.<br>
+    <p><a href="https://www.okestro.com/solution/contrabass/" target="_blank" rel="noopener">콘트라베이스(Contrabass)</a>는 OpenStack 기반 Private Cloud IaaS 자원 관리 포탈입니다.<br>사용자는 CLI 없이 포탈 화면에서 Compute, Network, Storage, Load Balancer 자원을 생성하고 관리할 수 있습니다.<br>
     이 포탈의 백엔드에서 OpenStack 각 서비스와 연동되는 자원 관리 기능을 개발하고 운영했습니다.</p>
     <div class="gm-table-wrap">
       <table class="gm-table">
