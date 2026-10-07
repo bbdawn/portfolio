@@ -252,9 +252,6 @@ Calico CNI 설치  →  3개 노드 모두 Ready</code></pre>
       <li>OCR이 공백을 지워 붙인 날짜·시각을 파싱하고, 사업자번호를 날짜로 오인하지 않도록 유효한 날짜만 채택</li>
       <li>추출은 휴리스틱이라 틀릴 수 있으므로 네 항목 모두 화면에서 수정 가능</li>
     </ul>
-    <div class="gm-note">
-      <strong>설계 포인트</strong> — 파일명 생성 같은 후처리는 전부 프론트엔드에서 합니다. 서버에서 하면 응답의 추론 시간(<code>elapsed_ms</code>)에 후처리 시간이 섞여 벤치마크 측정이 오염되기 때문입니다.
-    </div>
   </div>
 
   <div class="gm-card">
