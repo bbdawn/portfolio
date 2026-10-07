@@ -103,35 +103,6 @@ permalink: /gpu/
 
 <div id="gpu-server">
 
-  <!-- ══════════ 개요 ══════════ -->
-  <div class="gm-card">
-    <h3><i class="fas fa-lightbulb"></i> 개요</h3>
-    <p>KT Cloud PPP 「GPU Server」는 일반 Public Cloud 서비스 대비 강화된 보안성을 제공하는 공공기관 전용 Cloud 컴퓨팅 인프라 서비스입니다.<br>
-    크기 조정이 가능한 컴퓨팅 인프라를 가상화하여 제공하되, 서버들의 리소스는 PPP에서 안전하게 관리하고 고객 단독 사용이 보장됩니다.</p>
-    <div class="gs-grid">
-      <div class="gs-box">
-        <div class="gs-box-icon"><i class="fas fa-shield-alt"></i></div>
-        <div class="gs-box-title">안전한 데이터 처리</div>
-        <div class="gs-box-desc">보안 인증 획득, 물리적 FW/IPS로 대규모 공격에서 안전, 보유 민감정보는 별도 Zone에서 보호</div>
-      </div>
-      <div class="gs-box">
-        <div class="gs-box-icon"><i class="fas fa-mouse-pointer"></i></div>
-        <div class="gs-box-title">간편한 Server 생성</div>
-        <div class="gs-box-desc">GUI 기반의 간편한 클라우드 GPU Server 생성</div>
-      </div>
-      <div class="gs-box">
-        <div class="gs-box-icon"><i class="fas fa-chart-line"></i></div>
-        <div class="gs-box-title">자원 모니터링</div>
-        <div class="gs-box-desc">GPU 사용률, GPU 메모리 사용률, GPU 온도, GPU 전력 사용량 등 GPU Server 자원에 대한 가시성 제공</div>
-      </div>
-    </div>
-    <div class="gm-note">
-      <strong>PPP 클라우드란?</strong><br>
-      PPP(Public Private Partnership, 민관협력형) 클라우드는 공공과 민간이 협력하여 클라우드 환경을 함께 설계하고 운영하는 클라우드입니다.
-      민간의 경험과 기술력, 자본을 활용해 공공 서비스를 효율적으로 제공하기 위해 만들어진 모델입니다.
-    </div>
-  </div>
-
   <!-- ══════════ 기술에서 상품까지 ══════════ -->
   <div class="gm-card">
     <h3><i class="fas fa-route"></i> 기술에서 상품까지</h3>
@@ -185,6 +156,35 @@ permalink: /gpu/
       <div class="gs-task-title"><i class="fas fa-toolbox"></i> GPU 운영 자동화</div>
       <p>GPU Instance 운영을 위한 mdev orphan 탐지 및 MIG 프로파일 관리 자동화 도구를 개발했습니다.</p>
       <div class="gs-map"><span class="gm-compare-badge dev">운영 도구</span><a href="{{ '/gpu-manager/' | relative_url }}">GPU Manager 보기 →</a></div>
+    </div>
+  </div>
+
+  <!-- ══════════ 서비스 제공 ══════════ -->
+  <div class="gm-card">
+    <h3><i class="fas fa-cloud"></i> KT Cloud PPP 「GPU Server」 서비스 제공</h3>
+    <p>KT Cloud PPP 「GPU Server」는 일반 Public Cloud 서비스 대비 강화된 보안성을 제공하는 공공기관 전용 Cloud 컴퓨팅 인프라 서비스입니다.<br>
+    크기 조정이 가능한 컴퓨팅 인프라를 가상화하여 제공하되, 서버들의 리소스는 PPP에서 안전하게 관리하고 고객 단독 사용이 보장됩니다.</p>
+    <div class="gs-grid">
+      <div class="gs-box">
+        <div class="gs-box-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="gs-box-title">안전한 데이터 처리</div>
+        <div class="gs-box-desc">보안 인증 획득, 물리적 FW/IPS로 대규모 공격에서 안전, 보유 민감정보는 별도 Zone에서 보호</div>
+      </div>
+      <div class="gs-box">
+        <div class="gs-box-icon"><i class="fas fa-mouse-pointer"></i></div>
+        <div class="gs-box-title">간편한 Server 생성</div>
+        <div class="gs-box-desc">GUI 기반의 간편한 클라우드 GPU Server 생성</div>
+      </div>
+      <div class="gs-box">
+        <div class="gs-box-icon"><i class="fas fa-chart-line"></i></div>
+        <div class="gs-box-title">자원 모니터링</div>
+        <div class="gs-box-desc">GPU 사용률, GPU 메모리 사용률, GPU 온도, GPU 전력 사용량 등 GPU Server 자원에 대한 가시성 제공</div>
+      </div>
+    </div>
+    <div class="gm-note">
+      <strong>PPP 클라우드란?</strong><br>
+      PPP(Public Private Partnership, 민관협력형) 클라우드는 공공과 민간이 협력하여 클라우드 환경을 함께 설계하고 운영하는 클라우드입니다.
+      민간의 경험과 기술력, 자본을 활용해 공공 서비스를 효율적으로 제공하기 위해 만들어진 모델입니다.
     </div>
   </div>
 
