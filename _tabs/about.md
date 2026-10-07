@@ -49,34 +49,35 @@ description: OpenStack 기반 Private Cloud 개발·운영 경험을 바탕으�
       </div>
       <div style="font-size: 0.92rem; font-weight: 600; opacity: 0.75; margin-bottom: 0.35rem;">OpenStack 기반 Private Cloud IaaS 플랫폼 「<a href="https://www.okestro.com/solution/contrabass/" target="_blank" rel="noopener">콘트라베이스</a>」 개발·운영</div>
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
-        <li><strong>Private Cloud</strong>
+        <li><strong>Private Cloud / 상품·기술 검토</strong>
           <ul style="padding-left: 1rem; margin: 0;">
             <li>GPU·Network·Load Balancer·VM Lifecycle 관련 RFP 요구사항 충족 여부 검토 및 미충족 항목의 기술 구현 가능성 의견 제시</li>
-            <li>신규 기능 개발을 위한 경쟁 제품·기술 동향 조사 및 제품 기능·기술 적용 방식 검토</li>
-            <li>OpenStack 기반 Private Cloud 자원(Compute·Network·Storage·Load Balancer) 관리 기능 개발 및 운영</li>
-            <li>사용자 편의성을 고려한 기능 개발 (Floating IP 연동 가능 여부 표출, SSL 인증서 등록 간소화)</li>
+            <li>신규 기능 개발을 위한 경쟁 제품·기술 동향 조사 및 기능·기술 적용 방식 검토</li>
+            <li>OpenStack 기반 Private Cloud의 Compute·Network·Storage·Load Balancer 자원 관리 기능 개발 및 운영</li>
+            <li>사용자 요구사항을 반영한 서비스 기능 개선 및 편의성 향상
+              <ul style="padding-left: 1rem; margin: 0;">
+                <li>Floating IP 연동 가능 여부 표출</li>
+                <li>SSL 인증서 등록 절차 간소화</li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><strong>GPU / AI Infrastructure</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>KT Cloud PPP 「GPU Server」 상품화 및 서비스 제공</li>
+            <li>GPU Instance 기능 개발을 통해 KT Cloud PPP 「GPU Server」 상품화 및 서비스 제공에 참여</li>
             <li>GPU Passthrough·MIG 기반 GPU Instance 및 모니터링 기능 개발</li>
+            <li>GPU 자원 운영 과정에서 발생하는 mdev orphan 탐지 및 MIG 프로파일 관리 자동화</li>
           </ul>
         </li>
-        <li><strong>Data Center</strong>
+        <li><strong>Data Center / Infrastructure</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>IPMI · SNMP · LLDP 기반 데이터센터 랙 구성도 관리·시각화 기능 개발</li>
+            <li>IPMI·SNMP·LLDP 기반 데이터센터 Rack Topology 관리·시각화 기능 개발</li>
           </ul>
         </li>
-        <li><strong>Automation</strong>
-          <ul style="padding-left: 1rem; margin: 0;">
-            <li>GPU Instance 운영을 위한 mdev orphan 탐지 및 MIG 프로파일 관리 자동화</li>
-          </ul>
-        </li>
-        <li><strong>Technical Support</strong>
+        <li><strong>Technical Support / 고객 요구사항 대응</strong>
           <ul style="padding-left: 1rem; margin: 0;">
             <li><a href="http://www.worktoday.co.kr/news/articleView.html?idxno=40581" target="_blank" rel="noopener">국방지능형플랫폼</a> GPU 모니터링 기능 개발</li>
-            <li>고객 환경 기술지원 및 장애 분석</li>
+            <li>고객 환경의 기술 요구사항 분석 및 장애 원인 분석·기술지원</li>
           </ul>
         </li>
       </ul>
