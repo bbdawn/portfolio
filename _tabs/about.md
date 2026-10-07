@@ -51,7 +51,7 @@ description: OpenStack 기반 Private Cloud 개발·운영 경험을 바탕으�
       <ul style="font-size: 0.95rem; line-height: 1.85; padding-left: 1rem; margin: 0; opacity: 0.8;">
         <li><strong>Private Cloud</strong>
           <ul style="padding-left: 1rem; margin: 0;">
-            <li>GPU·Network·Load Balancer·VM Lifecycle 관련 RFP 요구사항 충족 여부 검토 및 기술 의견 제시</li>
+            <li>GPU·Network·Load Balancer·VM Lifecycle 관련 RFP 요구사항 충족 여부 검토 및 미충족 항목의 기술 구현 가능성 의견 제시</li>
             <li>신규 기능 개발을 위한 경쟁 제품·기술 동향 조사 및 제품 기능·기술 적용 방식 검토</li>
             <li>OpenStack 기반 Private Cloud 자원(Compute·Network·Storage·Load Balancer) 관리 기능 개발 및 운영</li>
             <li>사용자 편의성을 고려한 기능 개발 (Floating IP 연동 가능 여부 표출, SSL 인증서 등록 간소화)</li>
