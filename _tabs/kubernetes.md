@@ -202,7 +202,7 @@ Calico CNI 설치  →  3개 노드 모두 Ready</code></pre>
     <p>매달 반복되는 이 작업을 없애기 위해, 영수증을 올리기만 하면 파일명이 자동으로 만들어지는 OCR 서비스를 만들었습니다.</p>
     <div class="gm-note">
       <span class="gm-compare-badge before">BEFORE</span>영수증마다 열어서 정보 확인 → 파일명 직접 입력 (개인별 월 40장)<br>
-      <span class="gm-compare-badge after">AFTER</span>여러 장을 한 번에 업로드 → 파일명 자동 생성 → 전체 다운로드
+      <span class="gm-compare-badge after">AFTER</span>여러 장을 한 번에 업로드 → 파일명 자동 생성 → 바뀐 이름으로 바로 다운로드해 청구에 첨부
     </div>
   </div>
 
@@ -247,6 +247,7 @@ Calico CNI 설치  →  3개 노드 모두 Ready</code></pre>
       </div>
     </div>
     <ul>
+      <li><strong>생성된 파일명으로 원본 이미지를 바로 다운로드</strong> — 이름을 따로 바꿀 필요 없이 받은 파일을 그대로 청구에 첨부 (여러 장은 전체 다운로드)</li>
       <li>배달앱처럼 결제 주체(가맹점)와 실제 매장(판매자)이 다른 영수증을 고려해 두 섹션을 구분해 추출</li>
       <li>OCR이 공백을 지워 붙인 날짜·시각을 파싱하고, 사업자번호를 날짜로 오인하지 않도록 유효한 날짜만 채택</li>
       <li>추출은 휴리스틱이라 틀릴 수 있으므로 네 항목 모두 화면에서 수정 가능</li>
