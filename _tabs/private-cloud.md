@@ -112,6 +112,24 @@ permalink: /private-cloud/
     </div>
   </div>
 
+  <!-- ══════════ RFP 검토 ══════════ -->
+  <div class="gm-card">
+    <h3><i class="fas fa-clipboard-check"></i> RFP 요구사항 기술 검토</h3>
+    <p>공공기관 AI 플랫폼 구축 사업의 RFP에서 <strong>GPU, Network, Load Balancer, VM Lifecycle 관리</strong> 요구사항을 콘트라베이스에 구현된 기능과 하나씩 대조해 충족 가능 여부를 검토하고, 기술적인 의견을 전달했습니다.</p>
+<pre><code>RFP 요구사항  →  구현된 기능과 대조  →  충족 가능 여부 판단  →  기술 의견 전달
+                                      (충족 / 부분 충족 / 미충족)</code></pre>
+    <div class="gm-table-wrap">
+      <table class="gm-table">
+        <tr><th>검토 영역</th><th>검토 관점</th></tr>
+        <tr><td>GPU</td><td>요구하는 GPU 할당 방식과 지원 범위를 현재 구현과 비교</td></tr>
+        <tr><td>Network</td><td>네트워크 서비스, IP 관리 요구사항의 제공 범위 확인</td></tr>
+        <tr><td>Load Balancer</td><td>로드밸런서 및 연계 기능의 동작 조건 확인</td></tr>
+        <tr><td>VM Lifecycle</td><td>VM 생성·삭제·전원 관리, 스냅샷 등 라이프사이클 기능 충족 여부 확인</td></tr>
+      </table>
+    </div>
+    <div class="gm-note">부분적으로 충족하는 항목은 <strong>어떤 조건에서 충족되는지</strong> 기술적 근거를 함께 정리해, 사업팀이 수용 방안과 검수 기준을 정할 수 있도록 했습니다.</div>
+  </div>
+
   <!-- ══════════ Floating IP ══════════ -->
   <div class="gm-card">
     <h3><i class="fas fa-user-check"></i> 사용자 경험 개선 — Floating IP 연동 가능 여부 표출</h3>
